@@ -119,7 +119,7 @@ jobs:
 
           base_url="https://github.com/libimobiledevice"
 
-          libs=( "libplist" )
+          libs=( "libplist" "libtatsu" "libimobiledevice-glue" "libusbmuxd" "libimobiledevice" "libirecovery"  "ifuse" )
 
           for name in "${libs[@]}"; do
             ver_var=$(echo "${name^^}_VER" | sed 's/-/_/g')   # e.g. LIBPLIST_VER
